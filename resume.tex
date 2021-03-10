@@ -1,0 +1,262 @@
+%-------------------------
+% Resume in Latex
+% Author : Jorge Garcia
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jorge Garcia} \\ \vspace{1pt}
+    \small 702-355-2322 $|$ \href{mailto:jorge.gar@me.com}{\underline{jorge.gar@me.com}} $|$ 
+    \href{www.linkedin.com/in/Jorge-gar}{\underline{linkedin.com/in/jorge-gar}} $|$
+    \href{https://github.com/kawa5604/}{\underline{github.com/kawa5604}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Nevada Las Vegas}{Las Vegas, NV}
+      {Bachelor of Science in Computer Science}{May 2021}
+    \resumeSubheading
+      {La Salle University}{Mexico}
+      {Bachelor of Business Administration}{May 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{June 2020 -- Present}
+      {UNLV}{Las Vegas, NV}
+      \resumeItemListStart
+        \resumeItem{Currently researching Optical Character Recognition and developing a plugin to read, parse, and analyze data on a webapp.}
+        \resumeItem{Developed a social distancing detector using Deep Learning, OpenCV, and YOLOv3. Paper published by UNLV.}
+        \resumeItem{Developed a polaroid filter extraction application using Conditional Adversarial Networks and OpenCV.Paper published by ITNG.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Information Technology Specialist}{Oct. 2019 -- Present}
+      {UNLV}{Las Vegas, NV}
+      \resumeItemListStart
+        \resumeItem{Maintain and monitor workstations, labs, student-facing servers, faculty-facing servers, and networks for the Dept. of Computer Science.}
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff.}
+        \resumeItem{Develop new web-apps for monitoring and logging and automate processes and procedures.}
+        \resumeItem{Monitor internal subnet for intrusions and develop documentation and procedures for incident response.}
+        \resumeItem{Implemented an internal inventory system web-app - \emph{python, flask, PSQL}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern}{March 2021-- Present}
+      {Maryland Innovation and Security Institute}{Remote}
+      \resumeItemListStart
+        \resumeItem{Intern for the \emph{CYBER EDUCATION DIVERSITY CYBERSHIP}}
+        \resumeItem{Build skills in network and log analysis at a Security Operations Center \emph{SOC}}
+        \resumeItem{Complete the Cybersecurity Maturity Model Certification \emph{CMMC}}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Officer}{May 2019 -- Present}
+      {Layer Zero Cybersecurity Club}{Las Vegas, NV}
+      \resumeItemListStart
+        \resumeItem{Developed and hardened a VM to host an instance of OWASP's Security Shepherd web-app to develop cybersecurity skills.}
+        \resumeItem{Manage and post on the club's website and blog.}
+        \resumeItem{Publish write-ups to CTF exercises.}
+        \resumeItem{Organize cybersecurity conferences and trainings for the club.}
+        \resumeItem{Train new members on introductory subjects to cybersecurity, linux, and networking.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Volunteer}{Feb. 2021 - Present}
+      {Cimarron Memorial High School}{Las Vegas, NV}
+      \resumeItemListStart
+        \resumeItem{Mentor High School students from their cybersecurity club.}
+        \resumeItem{Teach basics and introductory cybersecurity terminology and concepts.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Volunteer}{May 2019 -- March 2020}
+      {OWASP}{Las Vegas, NV}
+      \resumeItemListStart
+        \resumeItem{Volunteer setting up quarterly meetings and cybersecurity conferences.}
+        \resumeItem{Attend cybersecurity conferences to promote OWASP.}
+      \resumeItemListEnd
+      
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Flix} $|$ \emph{Swift, UIkit, Cocoapods, web API,}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developing an iOS app to parse an API to list most recent and coming-soon movies.}
+            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            \resumeItem{Visualized GitHub data to show collaboration}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Home-Lab} $|$ \emph{Internal DNS, VPN, DHCP, virtual pfSense routers, puppet CMS, independent wireless APs}}{March 2020 -Present}
+          \resumeItemListStart
+            \resumeItem{Built my own home-lab and network to practice cybersecurity concepts securely.}
+            \resumeItem{Set up multiple virtual networks to isolate devices.}
+            \resumeItem{Manage my local PKI with a root CA to sign on my internal web-apps for testing.}
+            \resumeItem{Unbound DNS, DHCP, and VPN handled by different vms.}
+            \resumeItem{Hosting my instance of OWASP Security Shepherd and FacebookCTF.}
+            \resumeItem{Practice concepts like network analysis with Wireshark, wireless AP wep/wpa attacks, MITM attacks, system hardening}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Swift, Bash, Java, Python, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: SwiftUI, UIKit, cocoapods } \\
+     \textbf{Developer Tools}{: Git, Docker, ELK stack, Puppet Technologies, Ovirt Virtualization Manager, Proxmox, Active Directory,  AWS, AZURE, Google Cloud Platform, multiple linux distributions, Wireshark, Nagios Monitoring} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, OpenCV, Tesseract, YOLOv3}
+    }}
+ \end{itemize}
+
+
+%
+%-----------CEERTIFICATIONS----------
+\section{CERTIFICATIONS \& RELEVANT COURSES  }
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\href{https://activecountermeasures.com}{\underline{Active Countermeasures}}}{: Threat Hunting} \\
+     \textbf{Google - Coursera}{: Technical Fundamentals, Python and OS', Config. Management and the Cloud} \\
+     \textbf{\href{https://codepath.org}{\underline{CodePath}}}{: iOS  Development} \\
+     \textbf{\href{https://codepath.org}{\underline{CodePath}}}{: Cybersecurity} \\
+     \textbf{NASA - Desert Research Institute}{: Cybersecurity Bootcamp} \\
+     \textbf{UNLV - Graduate School}{: Digital Forensics} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
