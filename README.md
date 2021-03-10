@@ -5,12 +5,16 @@ My personal Resume on its first iteration.
 ## To Add:
 ### Certifications
  
- 
-### comptia security+
-### CMMC
-### CEH
-### INE cert
-### CISSP
+comptia security+
+CMMC
+CEH
+INE cert
+CISSP
+
+### Bring personal website online 
+
+theblondemonkey.com
+Host projects
 
 
 ## License
