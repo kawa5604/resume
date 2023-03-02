@@ -99,6 +99,12 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
+
+%------------------------------------------
+%custom underlilne package
+\usepackage[normalem]{ulem}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -113,36 +119,19 @@
 
 \begin{center}
     \textbf{\Huge \scshape Jorge Garcia} \\ \vspace{1pt}
-    \small 702-355-2322 $|$ \href{mailto:jorge.gar@me.com}{\underline{jorge.gar@me.com}} $|$ 
-    \href{https://cyberdevpro.com}{\underline{cyberdevpro.com}} $|$
-    \href{https://github.com/kawa5604/}{\underline{github.com/kawa5604}}
+    \small \href{mailto:jorge.gar@me.com}{\uline{jorge.gar@me.com}} $|$ 
+    \small \href{mailto:jorge.gar@me.com}{\uline{NY based}} $|$ 
+    \href{https://cyberdevpro.com}{\uline{cyberdevpro.com}} $|$
+    \href{https://github.com/kawa5604/}{\uline{github.com/kawa5604}} $|$
 \end{center}
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Nevada Las Vegas}{Las Vegas, NV}
-      {Bachelor of Science in Computer Science}{May 2021}
-    \resumeSubheading
-      {La Salle University}{Mexico}
-      {Bachelor of Business Administration}{May 2012}
-  \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Professional Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {UNLV}{Las Vegas, NV}
-      \resumeItemListStart
-        \resumeItem{Currently researching Optical Character Recognition and developing a plugin to read, parse, and analyze data on a webapp.}
-        \resumeItem{Developed a social distancing detector using Deep Learning, OpenCV, and YOLOv3. Paper published by UNLV.}
-        \resumeItem{Developed a polaroid filter extraction application using Conditional Adversarial Networks and OpenCV.Paper published by ITNG.}
-      \resumeItemListEnd
+
       
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
@@ -155,18 +144,39 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Information Technology Specialist}{Oct. 2019 -- Present}
-      {UNLV}{Las Vegas, NV}
+      {Cybersecurity Analyst \& Penetration Tester}{2021 -- Current}
+      {Dox Electronics}{NY}
+      \resumeItemListStart
+        \resumeItem{Perform audits for Defense Industrial Base (DIB) companies seeking \emph{CMMC, NIST 800-171, NIST SP 800-53, and NY SHIELD} compliance.}
+        \resumeItem{Perform all phases of \emph{internal and external penetration testing.}}
+        \resumeItem{Successfully completed \emph{Red Team engagements} including physical security control testing.}
+        \resumeItem{Designed, developed, and maintained internal SOP web application to \emph{optimize the customer auditing process.}}
+        \resumeItem{Perform \emph{web application testing} based on OWASP TOP 10 framework.}
+        \resumeItem{Designed and implemented a \emph{new product} for customers seeking phishing testing and training.}
+        \resumeItem{Designed, developed, and implemented a new recurring revenue product to perform routine vulnerability assessments on customer internal networks.}
+        \resumeItem{Perform \emph{Email Data Leak} audits on multiple cloud platforms and vendors.}
+        \resumeItem{Perform \emph{Cloud audits} on AWS and Azure, both hybrid and pure-cloud environments.}
+        \resumeItem{Delivered  \emph{custom written reports and presentations} to customers and stakeholders with findings.}
+        \resumeItem{Perform \emph{Man-in-the-Middle} attacks and \emph{wireshark} packet analysis to recover SMB objects, VoIP phone calls, print jobs, etc.}
+        \resumeItem{Perform \emph{OSINT} reconnaisance for a more comprehensive \emph{external threat footprint} overview for customers and C-level executives.}
+        \resumeItem{Write reports with \emph{actionable intelligence} and \emph{action items} that translated to more secure client organizations.}
+        \resumeItem{Develop automation tools to perform email spoofing and relaying attacks for phishing campaigns.}
+        \resumeItem{Help customers with Incident Response by request.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Jr Dev-Ops Engineer}{2019 -- 2021}
+      {University of Nevada Las Vegas}{Las Vegas, NV}
       \resumeItemListStart
         \resumeItem{Maintain and monitor workstations, labs, student-facing servers, faculty-facing servers, and networks for the Dept. of Computer Science.}
         \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff.}
         \resumeItem{Develop new web-apps for monitoring and logging and automate processes and procedures.}
         \resumeItem{Monitor internal subnet for intrusions and develop documentation and procedures for incident response.}
-        \resumeItem{Implemented an internal inventory system web-app - \emph{python, flask, PSQL}}
+        \resumeItem{Implemented an internal inventory system web application - \emph{python, flask, PSQL}}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Intern}{March 2021-- Present}
+      {Intern}{2021-- 2021}
       {Maryland Innovation and Security Institute}{Remote}
       \resumeItemListStart
         \resumeItem{Intern for the \emph{Cyber Education Diversity Cybership}}
@@ -174,19 +184,26 @@
         \resumeItem{Complete the Cybersecurity Maturity Model Certification \emph{CMMC}}
       \resumeItemListEnd
       
-    \resumeSubheading
-      {Officer}{May 2019 -- Present}
-      {Layer Zero Cybersecurity Club}{Las Vegas, NV}
+      \resumeSubheading
+      {Undergraduate Research Assistant}{2020 -- 2021}
+      {University of Nevada Las Vegas}{Las Vegas, NV}
       \resumeItemListStart
-        \resumeItem{Developed and hardened a VM to host an instance of OWASP's Security Shepherd web-app to develop cybersecurity skills.}
-        \resumeItem{Manage and post on the club's website and blog.}
-        \resumeItem{Publish write-ups to CTF exercises.}
-        \resumeItem{Organize cybersecurity conferences and trainings for the club.}
-        \resumeItem{Train new members on introductory subjects to cybersecurity, linux, and networking.}
+        \resumeItem{Researched Optical Character Recognition and developed a plugin to read, parse, and analyze data on a web application.}
+        \resumeItem{Developed a social distancing detector using Deep Learning, OpenCV, and YOLOv3. Paper published by UNLV.}
+        \resumeItem{Developed a polaroid filter extraction application using Conditional Adversarial Networks and OpenCV paper published by ITNG.}
       \resumeItemListEnd
       
     \resumeSubheading
-      {Volunteer}{Feb. 2021 - Present}
+      {Officer}{2019 -- 2021}
+      {Layer Zero Cybersecurity Club}{Las Vegas, NV}
+      \resumeItemListStart
+        \resumeItem{Hosted an instance of OWASP's Security Shepherd web-app to develop cybersecurity skills.}
+        \resumeItem{Manage and post on the club's website and blog.}
+        \resumeItem{Publish write-ups to CTF exercises.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Volunteer}{2021 - 2021}
       {Cimarron Memorial High School}{Las Vegas, NV}
       \resumeItemListStart
         \resumeItem{Mentor High School students from their cybersecurity club.}
@@ -194,7 +211,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Volunteer}{May 2019 -- March 2020}
+      {Volunteer}{ 2019 --  2020}
       {OWASP}{Las Vegas, NV}
       \resumeItemListStart
         \resumeItem{Volunteer setting up quarterly meetings and cybersecurity conferences.}
@@ -204,41 +221,53 @@
 
   \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Nevada Las Vegas}{Las Vegas, NV}
+      {Bachelor of Science in Computer Science - Cybersecurity Concentration}{May 2021}
+    \resumeSubheading
+      {La Salle University}{Mexico}
+      {Bachelor of Business Administration}{May 2012}
+  \resumeSubHeadingListEnd
+
+
 
 %-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Flix} $|$ \emph{Swift, UIkit, Cocoapods, web API,}}{June 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developing an iOS app to parse an API to list most recent and coming-soon movies.}
-            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
-            \resumeItem{Visualized GitHub data to show collaboration}
-            \resumeItem{Used Celery and Redis for asynchronous tasks}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Home-Lab} $|$ \emph{Internal DNS, VPN, DHCP, virtual pfSense routers, puppet CMS, Wireless APs}}{March 2020 -Present}
-          \resumeItemListStart
-            \resumeItem{Built my own home-lab and network to practice cybersecurity concepts securely.}
-            \resumeItem{Set up multiple virtual networks to isolate devices.}
-            \resumeItem{Manage my local PKI with a root CA to sign on my internal web-apps for testing.}
-            \resumeItem{Unbound DNS, DHCP, and VPN handled by different vms.}
-            \resumeItem{Hosting my instance of OWASP Security Shepherd and FacebookCTF.}
-            \resumeItem{Practice concepts like network analysis with Wireshark, wireless AP wep/wpa attacks, MITM attacks, system hardening}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+%\section{Projects}
+ %   \resumeSubHeadingListStart
+  %    \resumeProjectHeading
+   %       {\textbf{Flix} $|$ \emph{Swift, UIkit, Cocoapods, web API,}}{June 2020 -- Present}
+    %      \resumeItemListStart
+    %        \resumeItem{Developing an iOS app to parse an API to list most recent and coming-soon movies.}
+    %        \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+    %        \resumeItem{Visualized GitHub data to show collaboration}
+    %        \resumeItem{Used Celery and Redis for asynchronous tasks}
+    %      \resumeItemListEnd
+     % \resumeProjectHeading
+     %     {\textbf{Home-Lab} $|$ \emph{Internal DNS, VPN, DHCP, virtual pfSense routers, puppet CMS, Wireless APs}}{March 2020 -Present}
+     %     \resumeItemListStart
+     %       \resumeItem{Built my own home-lab and network to practice cybersecurity concepts securely.}
+     %       \resumeItem{Set up multiple virtual networks to isolate devices.}
+     %       \resumeItem{Manage my local PKI with a root CA to sign on my internal web-apps for testing.}
+     %       \resumeItem{Unbound DNS, DHCP, and VPN handled by different vms.}
+     %       \resumeItem{Hosting my instance of OWASP Security Shepherd and FacebookCTF.}
+     %       \resumeItem{Practice concepts like network analysis with Wireshark, wireless AP wep/wpa attacks, MITM attacks, system hardening}
+     %     \resumeItemListEnd
+    % \resumeSubHeadingListEnd
 
 
 
 %
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+\section{Technical Skills and Toolsets}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Swift, Bash, Java, Python, SQL, JavaScript, HTML/CSS} \\
-     \textbf{Frameworks}{: SwiftUI, UIKit, cocoapods } \\
+     \textbf{Frameworks}{: SwiftUI, UIKit } \\
      \textbf{Developer Tools}{: Git, Docker, ELK stack, Puppet Technologies, Ovirt Virtualization Manager, Proxmox, Active Directory,  AWS, AZURE, Google Cloud Platform, multiple linux distributions, Wireshark, Nagios Monitoring} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, OpenCV, Tesseract, YOLOv3}
+     \textbf{Tools}{: Nessus, BurpSuite, ZAP, Ghidra, IDA Pro, Wireshark, Nmap, msf, greenbone}
     }}
  \end{itemize}
 
